@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Demo Portfolio - Frontend Developer & Web Designer showcasing projects and skills.">
+  <title>Alex Morgan | Frontend Developer Portfolio</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons CDN for social & UI icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <!-- Logo / Brand Name -->
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Navigation Close Button -->
+        <button class="nav-close" id="nav-close" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Header Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-primary nav-btn">Hire Me</a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open Menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="hero">
+      <div class="hero-container container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span> Available for new opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Alex Morgan</span>
+          </h1>
+          <h2 class="hero-subtitle">Frontend Developer & UI Enthusiast</h2>
+          <p class="hero-description">
+            I build modern, clean, and responsive web applications. Passionate about translating design concepts into interactive, high-performance digital experiences.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Contact Me</span>
+              <i class="fa-regular fa-paper-plane"></i>
+            </a>
+          </div>
+
+          <!-- Quick Social Links -->
+          <div class="hero-socials">
+            <span class="socials-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="CodePen">
+                <i class="fa-brands fa-codepen"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Image / Avatar Graphic -->
+        <div class="hero-image-wrapper">
+          <div class="hero-image-backdrop"></div>
+          <div class="hero-image-box">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
+              alt="Alex Morgan - Frontend Developer Profile" 
+              class="hero-img"
+              loading="lazy"
+            >
+          </div>
+          <!-- Floating Status Badges -->
+          <div class="hero-floating-card card-experience">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <strong>2+ Years</strong>
+              <span>Coding Exp.</span>
+            </div>
+          </div>
+          <div class="hero-floating-card card-projects">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <strong>15+ Projects</strong>
+              <span>Completed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-container">
+          <div class="about-image-wrapper">
+            <div class="about-image-card">
+              <img 
+                src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" 
+                alt="Workspace with laptop and code" 
+                class="about-img"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h3 class="about-heading">
+              Passionate developer creating modern, accessible, and fast web solutions.
+            </h3>
+            <p class="about-text">
+              I am a front-end web developer with a strong foundation in modern web technologies. I specialize in building responsive, user-centric websites and web applications with clean, maintainable code.
+            </p>
+            <p class="about-text">
+              My goal is to continuously learn, adapt to emerging technologies, and build digital products that make an impact. When I'm not coding, I enjoy exploring UI/UX design trends and contributing to open-source discussions.
+            </p>
+
+            <!-- Key Highlights Grid -->
+            <div class="about-stats-grid">
+              <div class="stat-card">
+                <span class="stat-number">02+</span>
+                <span class="stat-title">Years Experience</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">15+</span>
+                <span class="stat-title">Projects Built</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number">100%</span>
+                <span class="stat-title">Commitment</span>
+              </div>
+            </div>
+
+            <!-- About Actions -->
+            <div class="about-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Let's Connect</span>
+                <i class="fa-solid fa-comments"></i>
+              </a>
+              <a href="#" class="btn btn-outline" onclick="alert('Demo Resume Download triggered!'); return false;">
+                <span>Download CV</span>
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Technical Proficiency</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper html-color">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">HTML5</h4>
+                <span class="skill-level">Semantic & SEO Friendly</span>
+              </div>
+              <span class="skill-percentage">95%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper css-color">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">CSS3 & Responsive Design</h4>
+                <span class="skill-level">Flexbox, Grid & Animations</span>
+              </div>
+              <span class="skill-percentage">90%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper js-color">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">JavaScript (ES6+)</h4>
+                <span class="skill-level">DOM Manipulation & Async APIs</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: React -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper react-color">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">React.js</h4>
+                <span class="skill-level">Components, Hooks & State</span>
+              </div>
+              <span class="skill-percentage">80%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 80%;"></div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-header">
+              <div class="skill-icon-wrapper git-color">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Git & GitHub</h4>
+                <span class="skill-level">Version Control & Branching</span>
+              </div>
+              <span class="skill-percentage">85%</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Complementary Skill Badges -->
+        <div class="other-skills-box">
+          <h4 class="other-skills-title">Other Tools & Workflows:</h4>
+          <div class="badges-wrapper">
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> RESTful APIs</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Responsive Web Design</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Web Performance</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Figma Design Translation</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> NPM & Vite</span>
+            <span class="skill-badge"><i class="fa-solid fa-check"></i> Cross-Browser Testing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portfolio Highlights</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=700&q=80" 
+                alt="E-Commerce Storefront Project" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Live Preview" aria-label="View live demo of E-Commerce Store">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code" aria-label="View source code of E-Commerce Store">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <h3 class="project-title">Modern E-Commerce Store</h3>
+              <p class="project-description">
+                A fully responsive online storefront featuring dynamic product filtering, cart drawer management, price calculations, and checkout validation.
+              </p>
+              <div class="project-links">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn github-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=700&q=80" 
+                alt="Task Management Dashboard Project" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Live Preview" aria-label="View live demo of Task Management App">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code" aria-label="View source code of Task Management App">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">CSS Modules</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <h3 class="project-title">Kanban Task Manager</h3>
+              <p class="project-description">
+                An intuitive productivity dashboard designed for organizing tasks into columns, setting priority tags, and persisting data across browser sessions.
+              </p>
+              <div class="project-links">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn github-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-img-wrapper">
+              <img 
+                src="https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=700&q=80" 
+                alt="Weather Forecast Dashboard Project" 
+                class="project-img"
+                loading="lazy"
+              >
+              <div class="project-overlay">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Live Preview" aria-label="View live demo of Weather App">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="overlay-btn" title="Source Code" aria-label="View source code of Weather App">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Fetch API</span>
+                <span class="tag">CSS Grid</span>
+              </div>
+              <h3 class="project-title">Interactive Weather App</h3>
+              <p class="project-description">
+                Real-time weather application showing 5-day forecasts, geolocation search, humidity indicators, and dynamic ambient background themes.
+              </p>
+              <div class="project-links">
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="project-btn demo-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn github-btn">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-container">
+          <!-- Left: Contact Details -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Let's discuss your next project</h3>
+            <p class="contact-info-desc">
+              I am open to freelance projects, full-time frontend developer roles, and collaborations. Send me a message and I'll get back to you shortly!
+            </p>
+
+            <div class="contact-cards">
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div>
+                  <span class="contact-card-label">Email Me</span>
+                  <a href="mailto:alex.morgan.dev@example.com" class="contact-card-val">alex.morgan.dev@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-val">San Francisco, CA (Open to Remote)</span>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <div class="contact-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                  <span class="contact-card-label">Availability</span>
+                  <span class="contact-card-val text-success">Available for Hire</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="contact-form-wrapper">
+            <form id="contact-form" class="contact-form" novalidate>
+              <!-- Alert container for error/success message -->
+              <div id="form-message" class="form-message" role="alert"></div>
+
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-container">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    class="form-input" 
+                    placeholder="e.g. Sarah Connor"
+                    required
+                  >
+                </div>
+                <small class="error-text" id="name-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-container">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    class="form-input" 
+                    placeholder="e.g. sarah@example.com"
+                    required
+                  >
+                </div>
+                <small class="error-text" id="email-error"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message <span class="required">*</span></label>
+                <div class="input-container textarea-container">
+                  <i class="fa-regular fa-comment-dots input-icon"></i>
+                  <textarea 
+                    id="message" 
+                    name="message" 
+                    class="form-input form-textarea" 
+                    rows="5" 
+                    placeholder="Tell me about your project or inquiry..."
+                    required
+                  ></textarea>
+                </div>
+                <small class="error-text" id="message-error"></small>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                <span>Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="footer-logo">
+          <span class="logo-bracket">&lt;</span>Alex<span class="logo-accent">.Dev</span><span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">Building clean & responsive experiences for the modern web.</p>
+      </div>
+
+      <!-- Footer Navigation Links -->
+      <ul class="footer-nav">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Footer Social Icons -->
+      <div class="footer-socials">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://codepen.io" target="_blank" rel="noopener noreferrer" aria-label="CodePen"><i class="fa-brands fa-codepen"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom container">
+      <p>&copy; <span id="current-year">2026</span> Alex Morgan. All rights reserved.</p>
+      <a href="#hero" class="scroll-top-btn" id="scroll-top-btn" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
